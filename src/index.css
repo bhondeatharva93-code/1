@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@keyframes sweep-light {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(250%) skewX(-25deg);
+    opacity: 0;
+  }
+}
+
+@keyframes diya-flame {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.9));
+  }
+  50% {
+    transform: scale(1.08, 0.94) translateY(-1.5px);
+    filter: drop-shadow(0 0 16px rgba(251, 146, 60, 1));
+  }
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-16px) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-32px) scale(0.9);
+    opacity: 0.2;
+  }
+}
+
+.animate-sweep-light {
+  animation: sweep-light 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-diya {
+  animation: diya-flame 2.2s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-particle 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar for smooth browsing */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

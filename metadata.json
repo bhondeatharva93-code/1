@@ -1,0 +1,6 @@
+{
+  "name": "COMPUTER GALAXY - Premium Computer & Electronics Store Sirohi",
+  "description": "Premium computer hardware, laptops, custom gaming PCs, printers, and accessories in Sirohi, Rajasthan. Wholesaler & retailer with Diwali Dhamaka mega offers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
